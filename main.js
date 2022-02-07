@@ -32,7 +32,11 @@ let numeriIndovinati = [];
 let quantitaNumeriIndovinati = [];
 
 // Da qui partirà il gioco (dopo i 30 secondi)
-setTimeout(avvioGioco, 3000);
+setTimeout(avvioGioco, 30000);
+
+
+
+
 
 
 
@@ -72,7 +76,7 @@ function avvioGioco() {
     document.getElementById('text-result').innerHTML = 'Risultati...';
     // Faccio apparire tex-result ('Risultati...')
     document.getElementById('text-result').classList.remove('hidden');
-    
+
     // Visualizzo su pagina quanti e quali numeri indovinati
     document.getElementById('numbers-guessed').innerHTML = "Numeri indovinati: " + numeriIndovinati;
     document.getElementById('amount-numbers-guessed').innerHTML = 'Quantità numeri indovinati: ' + numeriIndovinati.length;
