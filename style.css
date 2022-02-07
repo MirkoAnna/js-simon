@@ -18,12 +18,13 @@
     color: greenyellow;
 }
 
-.container .box-text {
+.container .box {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-top: 1%;
-    width: 22%;
+    width: 30%;
     height: 12%;
     background-color: black;
     border: 2px solid grey;
@@ -32,4 +33,16 @@
 
 .container h1 {
     color: white;
+}
+
+.container h3 {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+.active {
+    display: block;
 }
